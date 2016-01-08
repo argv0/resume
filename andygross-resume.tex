@@ -1,0 +1,116 @@
+\documentclass[10pt,letterpaper,sans]{moderncv}
+\moderncvstyle{banking} 
+\moderncvcolor{black}
+\nopagenumbers{} 
+\usepackage[style=authoryear]{biblatex}
+\addbibresource{publications.bib}
+
+\usepackage[scale=0.87,bottom=16mm,top=16mm]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Andy}{Gross}
+\address{1800 Bryant Street Apt. 305}{San Francisco, CA 94110}
+\phone[mobile]{+1~(415)~335~6775}
+\email{andy@andygross.org}
+\social[linkedin]{andygross}
+\social[twitter]{argv0}
+\social[github]{argv0}              
+\homepage{andygross.org} 
+\extrainfo{Conference Presentations: \url{http://lanyrd.com/profile/argv0}}
+%\quote{Some quote} 
+
+\setlength\bibitemsep{1.0\itemsep}
+
+\begin{document}
+
+\makecvtitle
+\vspace*{-5mm}
+\section{Summary}
+Veteran distributed systems, database, and cloud services expert with a
+15 year proven track record building world class products, services, and
+engineering teams. I`m seeking technology/product leadership and founder 
+opportunities at venture funded startups. 
+
+\section{Experience}
+\cventry{2/2015--7/2015}{Co-founder and CTO}{Opsee}{San Francisco, CA}{}{
+Founded with friends. Closed angels for 1.5MM seed round, 
+hired initial engineering team, and led implementation of the MVP product.
+}
+
+\cventry{3/2014--2/2015}{Staff Software Engineer}{Twitter}{
+San Francisco, CA}{}{Technical lead for Manhattan, Twitter's self-serve internal DBaaS.
+\begin{itemize}
+\item Implemented a distributed rate limiter/admission control system based on
+PID control to prevent cluster overload.
+\item Wrote an extensible integration testing tool to automate verification of
+cluster invariants and correctness checking.
+\item Worked with other tech leads and management to establish unit
+testing, code style, and documentation guidelines and best practices.
+\end{itemize}
+}
+
+
+\cventry{12/2007--3/2014}{Chief Architect}{Basho Technologies}{San Francisco, CA}{}{
+Author of Riak, a leading NoSQL database and Basho’s flagship product. I
+defined the technical and product direction as we grew the company from
+four to 140 employees in San Francisco, Cambridge, Herndon, London, and
+Tokyo. 
+\begin{itemize}
+\item Developed initial versions of all Basho Open Source and Enterprise
+software (Riak, RiakCS, Riak Enterprise Replication).
+\item Participated in fundraising, closed licensing deals with Fortune 50
+companies (Apple, Comcast, AT\&T, Verizon, State Farm).
+\item Presented at top industry conferences on distributed systems, guest
+lectured at Berkeley and Stanford on distributed systems theory.
+\end{itemize}
+}
+
+\cventry{5/2007--12/2007}{Senior Systems Architect}{Mochi Media}{San Francisco, CA}{}{
+Employee \#3. Helped secure funding from Accel, rewrote MVP
+infrastructure (message queue, monitoring system, deployment/operational
+tools) to handle post-launch growth.  Left to start Basho with
+Akamai colleagues.
+}
+\cventry{9/2005--5/2007}{Distributed Systems Engineer}{Apple}{Cupertino, CA}{}{
+Hired to write a distributed compiler to speed builds for Apple`s
+largest third party developers (Adobe, Microsoft). \begin{itemize}
+\item Designed and implemented a distributed filesystem (see Patents and Publications).
+\item Maintenance and feature development for the Xcode build system.
+\item Presented work at WWDC 2006.
+\end{itemize}
+}
+
+\cventry{7/1999--9/2005}{Senior Software Engineer}{Akamai Technologies}{Cambridge, MA}{}{
+Employee \#75. First job was carrying 21" CRT monitors for new
+hires, left as Senior Engineer leading custom high-margin products for
+the US Government.
+\begin{itemize}
+\item Co-designed and implemented Akamai Content Storage, the backing store
+for the first Apple iTunes Music Store launch.
+\item Designed and implemented a reactive overly network that became the basis
+for the Akamai's highly profitable IP acceleration products.
+\item Created an 'Internet Intelligence Portal', aggregating IDS, BGP, and
+performance data for consumption by the US Intelligence Community.
+\end{itemize}
+}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): 
+%\renewcommand{\refname}{Patents and Publications}
+\nocite{*}
+%\bibliographystyle{plain}
+%{\small
+%\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+%}
+\section{Patents and Publications}
+\printbibliography[heading=none]
+
+\section{Education}
+\cventry{1977--Present}{Hacking, Learning}{Autodidact}{Various}{\textit{}}{VIC-20, C64, Intel platforms}  % arguments 3 to 6 can be left empty
+\cventry{1996--1999}{Management, Finance}{University of Connecticut}{Storrs, CT}{\textit{}}{Left to take pre-IPO position at Akamai}
+
+\end{document}
+
