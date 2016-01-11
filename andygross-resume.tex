@@ -1,71 +1,67 @@
-\documentclass[10pt,letterpaper,sans]{moderncv}
+\documentclass[11pt,letterpaper,sans]{moderncv}
+\usepackage[style=authoryear]{biblatex}
+\usepackage[scale=0.86,bottom=10mm,top=10mm]{geometry}
+\usepackage{textcomp}
 \moderncvstyle{banking} 
 \moderncvcolor{black}
 \nopagenumbers{} 
-\usepackage[style=authoryear]{biblatex}
 \addbibresource{publications.bib}
-\setlength\bibitemsep{1.0\itemsep}
-\usepackage[scale=0.87,bottom=13mm,top=12mm]{geometry}
+\setlength\bibitemsep{0.5\itemsep}
+\renewcommand*{\bibfont}{\small}
 
 \name{Andy}{Gross}
 \address{1800 Bryant Street Apt. 305}{San Francisco, CA 94110}
 \phone[mobile]{+1~(415)~335~6775}
 \email{andy@andygross.org}
-\social[linkedin]{andygross}
 \social[twitter]{argv0}
-\social[github]{argv0}              
-\homepage{andygross.org} 
 \extrainfo{Conference Presentations: \url{http://lanyrd.com/profile/argv0}}
 
 \begin{document}
-
 \makecvtitle
-\vspace*{-7mm}
+\vspace*{-10mm}
 \section{Summary}
-I'm a veteran distributed systems, database, and cloud services expert with over 15 years
-experience building world class products, services, and engineering teams. I`m seeking 
-technology and product leadership and founder opportunities at venture funded startups. 
+\small{I'm a recognized expert on distributed systems, databases, and cloud architectures with over 15 years
+of experience building world class products, services, and engineering teams.  I am the primary author of Riak, an influential and commercially successful NoSQL database. I`m seeking 
+technology/product leadership and founder opportunities at venture funded startups. }
 \section{Experience}
 \cventry{2/2015--7/2015}{Co-founder and CTO}{Opsee}{San Francisco, CA}{}{
-Founded a developer-oriented monitoring company with friends. Brought investors into 1.5MM seed round, 
-hired initial engineering team, and led implementation of the MVP product.
+A developer-oriented monitoring company founded with friends. I brought
+investors into our 1.5MM seed round, hired the initial engineering team, and led
+implementation of the MVP product.
 }
 
 \cventry{3/2014--2/2015}{Staff Software Engineer, Core Storage}{Twitter}{
-San Francisco, CA}{}{Technical lead for Manhattan, Twitter's self-serve internal DBaaS.
+San Francisco, CA}{}{I was a technical lead for Manhattan, Twitter's self-serve internal DBaaS, and other projects in the Core Storage group.
 \begin{itemize}
-\item Implemented a distributed rate limiter/admission control system based on
-PID control to prevent cluster overload.
-\item Wrote an extensible integration testing tool to automate verification of
-cluster invariants and correctness checking.
-\item Worked with other tech leads and management to establish unit
-testing, code style, and documentation guidelines and best practices.
+\item Implemented a distributed rate limiting and admission control system based on
+control theory to prevent cluster overload.
+\item Authored an integration testing tool to automate verification of
+cluster inv	ariants and correctness checking.
+\item Wrote a dynamic configuration framework for Manhattan, allowing system configuration to be changed at runtime.
 \end{itemize}
 }
 
-\cventry{12/2007--3/2014}{Chief Architect}{Basho Technologies}{San Francisco, CA}{}{
-Author of Riak, a leading NoSQL database and Basho’s flagship product. I
-defined the technical and product direction as we grew the company from
-four to 140 employees in San Francisco, Cambridge, Herndon, London, and
+\cventry{12/2007--3/2014}{Chief Architect, VP of Engineering}{Basho Technologies}{San Francisco, CA}{}{
+I authored Riak, Basho's flagship product. I defined the technical and product direction as we grew the company from four to 140 employees in San Francisco, Cambridge, Herndon, London, and
 Tokyo. 
 \begin{itemize}
-\item Developed initial versions of all Basho Open Source and Enterprise
+\item Authored initial versions of all Basho Open Source and Enterprise
 software (Riak, RiakCS, Riak Enterprise Replication).
-\item Participated in fundraising, closed licensing deals with Fortune 50
+\item Built engineering team, participated in fundraising, closed deals with Fortune 50
 companies (Apple, Comcast, AT\&T, Verizon, State Farm).
-\item Presented at top industry conferences on distributed systems, guest
-lectured at Berkeley and Stanford on distributed systems in industry.
+\item Presented at conferences on distributed systems, lectured at Berkeley and Stanford on 
+distributed systems in industry.
 \end{itemize}
 }
 
 \cventry{5/2007--12/2007}{Senior Systems Architect}{Mochi Media}{San Francisco, CA}{}{
-Employee \#3. Helped secure funding from Accel, rewrote MVP
-infrastructure (message queue, monitoring system, deployment/operational
-tools) to handle post-launch growth.  Left to start Basho with
+I was hired as employee \#3. I helped secure funding from Accel and rewrote MVP
+infrastructure (messaging, monitoring, DevOps tools) to handle post-launch growth.  I left to start Basho with
 Akamai colleagues.
 }
-\cventry{9/2005--5/2007}{Distributed Systems Engineer, Developer Tools}{Apple}{Cupertino, CA}{}{
-Hired to write a distributed compiler to speed builds for Apple`s
+\cventry{9/2005--5/2007}{Distributed Systems Engineer, Developer Tools}{Apple}
+{Cupertino, CA}{}{
+I was recruited onto the Xcode team to write a distributed compiler to speed up build time for Apple`s
 largest third party developers (Adobe, Microsoft). 
 \begin{itemize}
 \item Designed and implemented a distributed filesystem (see Patents and Publications).
@@ -74,17 +70,16 @@ largest third party developers (Adobe, Microsoft).
 \end{itemize}
 }
 
-\cventry{7/1999--9/2005}{Senior Software Engineer}{Akamai Technologies}{Cambridge, MA}{}{
-Employee \#75. Hired to carry 21" CRT monitors for new hires, left as
+\cventry{7/1999--9/2005}{Senior Software Engineer, Government and Custom Engineering, Systems Engineering}{Akamai Technologies}{Cambridge, MA}{}{
+Employee \#75. I was hired to carry 21" CRT monitors for new hires, and left as a
 Senior Engineer leading design and development of custom high-margin
 products for the US Government.
 \begin{itemize}
-\item Co-designed and implemented Akamai Content Storage, the backing store
-for the initial Apple iTunes Music Store launch.
-\item Designed and implemented a reactive overly network that became the basis
-for the Akamai's highly profitable IP acceleration products.
-\item Created an 'Internet Intelligence Portal', aggregating IDS, BGP, and
-performance data for consumption by the US Intelligence Community.
+\item Implemented a reactive overlay network for a government customer that became the basis
+for Akamai's highly profitable IP acceleration products.
+\item Created an analytics application aggregating IDS, BGP, and
+performance data for the US Intelligence Community.
+\item Developed Akamai Content Storage, the distributed storage system backing the initial Apple iTunes Music Store launch.
 \end{itemize}
 }
 
@@ -93,8 +88,8 @@ performance data for consumption by the US Intelligence Community.
 \printbibliography[heading=none]
 
 \section{Education}
-\cventry{1977--Present}{Hacking, Learning}{Autodidact}{Various}{\textit{}}{VIC-20, C64, Intel platforms}  % arguments 3 to 6 can be left empty
-\cventry{1996--1999}{Management, Finance}{University of Connecticut}{Storrs, CT}{\textit{}}{Left to take pre-IPO position at Akamai}
+\cventry{1996--1999}{Management, Finance}{University of Connecticut}{Storrs, CT}
+{\textit{}}{Left to take pre-IPO position at Akamai}
 
 \end{document}
 

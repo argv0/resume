@@ -1,11 +1,15 @@
 default: andygross-resume.pdf
 
 
-andygross-resume.pdf: andygross-resume.tex publications.bib
-	xelatex $^
+andygross-resume.pdf: andygross-resume.aux andygross-resume.bbl
+	xelatex andygross-resume.tex
+	xelatex andygross-resume.tex
+	
+andygross-resume.bbl:  andygross-resume.tex
 	biber andygross-resume
-	xelatex $^	
-	xelatex $^		
+
+andygross-resume.aux:  andygross-resume.tex
+	xelatex andygross-resume.tex
 	
 
 clean:
